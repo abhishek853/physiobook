@@ -8,6 +8,7 @@ public class PhysiobookApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(PhysiobookApplication.class, args);
+		System.out.println("hello");
 	}
 
 }

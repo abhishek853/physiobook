@@ -1,0 +1,5 @@
+com\project\physiobook\configuration\CorsConfig$1.class
+com\project\physiobook\controller\LoginController.class
+com\project\physiobook\rest\HelloController.class
+com\project\physiobook\configuration\CorsConfig.class
+com\project\physiobook\PhysiobookApplication.class
