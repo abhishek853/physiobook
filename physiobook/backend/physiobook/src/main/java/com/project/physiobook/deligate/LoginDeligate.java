@@ -12,6 +12,6 @@ public class LoginDeligate {
     private LoginHelper loginHelper;
 
     public String loginValidCheck(String loginId,String password){
-        return loginHelper.logincheck(loginId,password);
+        return loginHelper.loginCheck(loginId,password);
     }
 }
