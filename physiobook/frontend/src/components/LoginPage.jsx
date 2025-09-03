@@ -1,10 +1,12 @@
 // src/components/LoginPage.jsx
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function LoginPage() {
   const [loginId, setLoginId] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
+  const navigate = useNavigate();   // ✅ use this hook
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -16,7 +18,11 @@ function LoginPage() {
         }
       );
       const result = await response.text();
-      setMessage(result);
+      if (result === "success") {
+              navigate("/dashboard");
+            } else {
+              setMessage("Invalid login credentials");
+            }
     } catch (error) {
       console.error("Error:", error);
       setMessage("Something went wrong!");

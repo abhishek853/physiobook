@@ -16,7 +16,7 @@ public class LoginHelper {
     public String loginCheck(String loginId, String password) {
         Optional<userDetails> user = userRepository.findByLoginIdAndPassword(loginId, password);
         if(user.isPresent()){
-            return "user is Present";
+            return "present";
         }
         else {
             return "user not present";

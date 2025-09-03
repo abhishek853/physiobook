@@ -13,6 +13,12 @@ public class LoginController {
 
     @PostMapping("/login")
     public String login(@RequestParam String loginId, @RequestParam String password) {
-        return loginDeligate.loginValidCheck(loginId, password);
+        String msg= loginDeligate.loginValidCheck(loginId, password);
+        if(msg.equals("present")){
+            return "success";
+        }
+        else {
+            return "error";
+        }
     }
 }

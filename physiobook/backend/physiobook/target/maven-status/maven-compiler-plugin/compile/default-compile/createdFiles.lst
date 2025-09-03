@@ -1,8 +1,9 @@
-com\project\physiobook\repository\LoginRepository.class
 com\project\physiobook\rest\HelloController.class
 com\project\physiobook\configuration\CorsConfig.class
 com\project\physiobook\deligate\LoginDeligate.class
 com\project\physiobook\rest\LoginController.class
 com\project\physiobook\PhysiobookApplication.class
+com\project\physiobook\entity\userDetails.class
 com\project\physiobook\configuration\CorsConfig$1.class
+com\project\physiobook\repository\UserRepository.class
 com\project\physiobook\helper\LoginHelper.class
